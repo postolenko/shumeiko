@@ -1907,6 +1907,8 @@ textarea:focus {
     align-items: flex-end;
     width: calc(100% - 540px);
     padding: 10px 12px 10px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .contacts_templ .left > div {
@@ -1917,6 +1919,8 @@ textarea:focus {
 .contacts_templ .right {
     width: 540px;
     padding: 10px 0 10px 12px;
+    position: relative;
+    z-index: 2;
 }
 
 .contacts_templ .img_box {
