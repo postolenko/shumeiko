@@ -77,6 +77,11 @@ body {
 
 body {
     background: #ffffff;
+    font-family: "Gilroy";
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: normal;
+    color: #000000;
 }
 
 .wrapper {
@@ -1021,6 +1026,11 @@ textarea:focus {
     position: relative;
 }
 
+.shape_wrapp * {
+    position: relative;
+    z-index: 2;
+}
+
 .shape_wrapp:before {
     content: "";
     width: 100%;
@@ -1034,6 +1044,7 @@ textarea:focus {
     position: absolute;
     top: 51px;
     right: 5.5%;
+    z-index: 1;
 }
 
 .h2_wrapp {
@@ -1053,8 +1064,9 @@ textarea:focus {
 }
 
 .blue_link {
-    display: inline-block;
-    vertical-align: baseline;
+/*    display: inline-block;
+    vertical-align: baseline;*/
+    display: inline;
     font-size: 17px;
     line-height: 17px;
     font-weight: normal;
@@ -1408,6 +1420,7 @@ textarea:focus {
 .transparent_pill {
     display: inline-block;
     vertical-align: top;
+    cursor: pointer;
     padding: 17px 25px 18px 25px;
     background: transparent;
     border: 1px solid #2d2d2d;
@@ -1591,6 +1604,281 @@ textarea:focus {
 }
 
 /*-- /Section 1 - Practice --*/
+
+/*-- Section 1 - Ask --*/
+
+.ask_templ {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 3px 0 37px 0;
+}
+
+.ask_templ .left {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 430px);
+    padding: 10px 15px 10px 0;
+}
+
+.ask_templ .right {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    padding: 10px 0 10px 15px;
+}
+
+.white_box {
+    height: 100%;
+    padding: 29px 20px 11px 20px;
+    border: 1px solid #e8e8e8;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 2px 15px 0 rgba(29, 42, 62, .05);
+    -moz-box-shadow: 0 2px 15px 0 rgba(29, 42, 62, .05);
+    box-shadow: 0 2px 15px 0 rgba(29, 42, 62, .05);
+}
+
+.input_wrapp {
+    margin-bottom: 15px;
+}
+
+.input_wrapp label {
+    display: block;
+    padding-bottom: 3px;
+    font-size: 17px;
+    line-height: 24px;
+    color: #5b5b5b;
+}
+
+.input_box {
+    display: flex;
+    display: -webkit-flex;
+    border: 1px solid #c4c4c4;
+    padding: 6px 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.input_box.active {
+    border: 1px solid #243995;
+}
+
+.input_col_1 {
+    width: 37px;
+}
+
+.input_col_2 {
+    width: calc(100% - 37px);
+}
+
+.input_col_1 img {
+    filter: grayscale(1);
+    position: relative;
+    top: 8px;
+    left: 8px;
+}
+
+.input_box.active .input_col_1 img {
+    filter: grayscale(0);
+}
+
+.input_col_2 input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-left: 1px solid transparent;
+    padding: 0 9px;
+    height: 36px;
+    font-size: 17px;
+    line-height: 35px;
+    color: #030303;
+}
+
+.input_box.active .input_col_2 input {
+    border-left: 1px solid #04051f;
+}
+
+.input_col_2 textarea {
+    display: block;
+    width: 100%;
+    height: 168px;
+    border: none;
+    border-left: 1px solid transparent;
+    padding: 5px 9px;
+    font-size: 17px;
+    line-height: 24px;
+    color: #030303;
+}
+
+.input_box.active .input_col_2 textarea {
+    border-left: 1px solid #04051f;
+}
+
+.checkbox {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    position: relative;
+    padding-left: 39px;
+    font-size: 15px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.checkbox a {
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.checkbox input {
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    border: 1px solid #c4c4c4;
+    background-color: transparent;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.checkbox input:checked {
+    background-image: url(img/checked.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.submit_wrapp {
+    padding: 21px 0;
+    text-align: center;
+}
+
+.transparent_pill_2 {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 197px;
+    cursor: pointer;
+    padding: 17px 25px 18px 25px;
+    background: transparent;
+    border: 1px solid #243995;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #243995;
+    -webkit-transition-property: background, color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background, color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background, color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background, color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.transparent_pill_2:link,
+.transparent_pill_2:visited {
+    background: transparent;
+    color: #243995;
+}
+
+.transparent_pill_2:active,
+.transparent_pill_2.active {
+    background: #243995;
+    color: #fff;
+}
+
+.transparent_pill_2:hover {
+    background: #243995;
+    color: #fff;
+}
+
+.white_box_2 {
+    height: 100%;
+    padding: 20px 25px 11px 25px;
+    border: 1px solid #e8e8e8;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 2px 15px 0 rgba(29, 42, 62, .05);
+    -moz-box-shadow: 0 2px 15px 0 rgba(29, 42, 62, .05);
+    box-shadow: 0 2px 15px 0 rgba(29, 42, 62, .05);
+}
+
+.white_box_2 h3 {
+    padding: 8px 0;
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.white_box_2 p {
+    padding: 8px 0;
+    line-height: 21px;
+}
+
+.skype_wrapp {
+    margin: 52px 0;
+}
+
+.skype_wrapp h3 {
+
+}
+
+.skype_link {
+    display: block;
+    margin: 10px 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    background-color: rgb(251, 252, 252);
+    height: 166px;
+    position: relative;
+}
+
+.skype_link img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/*-- /Section 1 - Ask --*/
+
+
+
+
+
+
+
+
+
+
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
