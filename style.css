@@ -1870,11 +1870,177 @@ textarea:focus {
 
 /*-- /Section 1 - Ask --*/
 
+/*-- Section 1 - Contacts --*/
 
+.contacts_templ {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin-top: 26px;
+}
 
+.contacts_templ .left {
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    width: calc(100% - 540px);
+    padding: 10px 12px 10px 0;
+}
 
+.contacts_templ .left > div {
+    width: 100%;
+    margin-bottom: 7px;
+}
 
+.contacts_templ .right {
+    width: 540px;
+    padding: 10px 0 10px 12px;
+}
 
+.contacts_templ .img_box {
+    height: 510px;
+    overflow: hidden;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.contacts_templ .img_box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.person_info {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.person_info_col_1 {
+    width: 205px;
+    padding-right: 10px;
+}
+
+.person_info_col_2 {
+    width: calc( 100% - 205px);
+    padding-left: 10px;
+}
+
+.person_photo {
+    height: 225px;
+    margin: 6px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.person_photo .img_box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.person_info_col_2 p {
+    padding-bottom: 13px;
+}
+
+.person_info_col_2 h3 {
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.contacts_items {
+    margin: 28px 0;
+}
+
+.contact_item {
+    display: flex;
+    display: -webkit-flex;
+    margin: 19px 0;
+}
+
+.contact_item > div:nth-child(1) {
+    width: 30px;
+    padding-left: 2px;
+}
+
+.contact_item > div:nth-child(2) {
+    width: calc(100% - 30px);
+}
+
+.contact_item > div:nth-child(1) img {
+    filter: grayscale(1);
+    position: relative;
+    top: 2px;
+}
+
+.contact_item p a {
+    color: #000;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.contact_item p a:link,
+.contact_item p a:visited {
+    color: #000;
+}
+
+.contact_item p a:active,
+.contact_item p a.active {
+    color: #243995;
+}
+
+.contact_item p a:hover {
+    color: #243995;
+}
+
+/*-- /Section 1 - Contacts --*/
+
+/*-- Section 2 - Contacts --*/
+
+.map_sect {
+    padding: 18px 0 1px 0;
+}
+
+#map {
+    height: 620px;
+}
+
+/*-- /Section 2 - Contacts --*/
 
 
 
