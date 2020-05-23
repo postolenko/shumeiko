@@ -4,7 +4,7 @@ e = d.documentElement,
 g = d.getElementsByTagName('body')[0],
 bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
-var parentBlock, dropdownBox;
+var parentBlock, dropdownBox, inputVal;
 
 $(window).load(function() {
 
@@ -74,6 +74,49 @@ $(document).ready(function() {
         dropdownBox.slideUp(300);
         parentBlock.removeClass("active");
       }
+    });
+
+    // -----------
+
+    $(".input_box input, .input_box textarea").on("click", function(e) {
+        e.preventDefault();
+        parentBlock = $(this).closest(".input_box");
+        $(".input_box").each(function() {
+            inputVal = $(this).find("input, textarea").val();
+            if(inputVal == "") {
+                $(this).removeClass("active");
+            }
+        });
+        if(!parentBlock.hasClass("active")) {
+            parentBlock.addClass("active");
+        }
+    });
+
+
+    $(this).keydown(function(eventObject){
+        if (eventObject.which == 27 ) {
+            $(".input_box").each(function() {
+                inputVal = $(this).find("input, textarea").val();
+                if(inputVal == "") {
+                    $(this).removeClass("active");
+                }
+            });
+        }
+    });
+
+    $(document).mouseup(function (e){
+        if(bodyWidth > 1024) {
+            hide_element = $(".input_box");
+            if (!hide_element.is(e.target)
+                && hide_element.has(e.target).length === 0 ) {
+                hide_element.each(function() {
+                    inputVal = $(this).find("input, textarea").val();
+                    if(inputVal == "") {
+                        $(this).removeClass("active");
+                    }
+                });
+            }
+        }
     });
 
 });
