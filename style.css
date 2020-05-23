@@ -1872,12 +1872,33 @@ textarea:focus {
 
 /*-- Section 1 - Contacts --*/
 
+.sect_1_contacts {
+    overflow-x: hidden;
+}
+
 .contacts_templ {
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     margin-top: 26px;
+    position: relative;
+}
+
+.contacts_templ:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    max-width: 648px;
+    max-height: 710px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(img/gerb.png);
+    position: absolute;
+    top: -68px;
+    right: -126px;
 }
 
 .contacts_templ .left {
