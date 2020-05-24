@@ -2628,13 +2628,40 @@ textarea:focus {
     vertical-align: top;
     position: relative;
     padding: 2px 25px 4px 10px;
-    background-color: #f7f8f9;
+    background: #f7f8f9;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
     border-radius: 16px;
     font-size: 14px;
     line-height: 24px;
     color: #000000;
+    -webkit-transition-property: background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.grey_tag:active {
+    background: #e5e6e6;
+}
+
+.grey_tag:hover {
+    background: #e5e6e6;
 }
 
 .grey_tag:after {
@@ -2823,6 +2850,139 @@ textarea:focus {
 }
 
 /*-- /Section 1 - Publications --*/
+
+/*-- Section 1 - Prices --*/
+
+.info_box_2 {
+    border-left: 3px solid #bb2828;
+    background-color: #f7f8f9;
+    margin: 29px 0;
+    padding: 33px 27px 51px 27px;
+}
+
+.info_box_2 h3 {
+    padding: 10px 0;
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.info_box_2 p {
+    padding: 10px 0;
+}
+
+.prices_items {
+    margin-top: 59px;
+}
+
+.price_item {
+    padding-bottom: 83px;
+}
+
+.price_item:last-child {
+    padding-bottom: 72px;
+}
+
+.price_item h3 {
+    padding: 0 0 10px 40px;
+    position: relative;
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.price_item h3:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 24px 27px;
+    border-color: transparent transparent #bb2828 transparent;
+    position: absolute;
+    top: -2px;
+    left: 0;
+}
+
+.price_item p {
+    padding: 25px 0;
+}
+
+.price_item h3 + p {
+    padding-top: 17px;
+}
+
+.price_item li {
+    padding: 10px 0;
+}
+
+.price_item ul li:nth-child(1) {
+    padding-top: 0;
+}
+
+.price_item ul ~ p {
+    padding-bottom: 10px;
+}
+
+.blue {
+    font-weight: bold;
+    color: #243995;
+}
+
+.prices_footer {
+    padding-bottom: 37px;
+    text-align: right;
+}
+
+.prices_footer p {
+    padding: 9px 0;
+}
+
+.prices_footer p a {
+    display: inline;
+    border-bottom: 1px solid #000000;
+    font-size: 17px;
+    line-height: 22px;
+    color: #000000;
+    -webkit-transition-property: border;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.prices_footer p a:link,
+.prices_footer p a:visited {
+    border-bottom: 1px solid #000000;
+}
+
+.prices_footer p a:active,
+.prices_footer p a.active {
+    border-bottom: 1px solid transparent;
+}
+
+.prices_footer p a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+
+/*-- /Section 1 - Prices --*/
+
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
