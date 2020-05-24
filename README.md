@@ -5,3 +5,4 @@
 # http://postolenko.github.io/shumeiko/contacts.html
 # http://postolenko.github.io/shumeiko/about.html
 # http://postolenko.github.io/shumeiko/services.html
+# http://postolenko.github.io/shumeiko/publications.html
