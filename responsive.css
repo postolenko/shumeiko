@@ -1,30 +1,743 @@
+@media only screen and (max-width: 1400px) {
+
+.row {
+	padding: 0 25px;
+}
+
+/*-- Header --*/
+
+.header_top .contact_thumb:nth-child(1) {
+	display: none;
+}
+
+/*-- /Header --*/
+
+/*-- Section 2 - About --*/
+
+.sertificate img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+
+/*-- /Section 2 - About --*/
+
+}
+
 @media only screen and (max-width: 1240px) {
 
+/*-- Section 3 --*/
 
+.article_thumb {
+    width: calc(50% - 20px);
+}
+
+.article_thumb .thumb_descript {
+    min-height: 240px;
+}
+
+/*-- /Section 3 --*/
+
+/*-- Section 1 - Partners --*/
+
+.partner {
+    width: calc(50% - 40px);
+}
+
+.partner div:nth-child(1) img {
+    max-width: 100%;
+}
+
+/*-- /Section 1 - Partners --*/
+
+/*-- Section 1 - Publications --*/
+
+.publication {
+    width: calc(50% - 24px);
+    margin: 12px;
+}
+
+/*-- /Section 1 - Publications --*/
+
+/*-- Section 1 - Services --*/
+
+.services {
+    margin: 35px -12px 35px -12px;
+}
+
+.service {
+	width: calc(33.33% - 24px);
+}
+
+/*-- /Section 1 - Services --*/
+
+}
+
+@media only screen and (max-width: 1124px) {
+
+/*-- Header --*/
+
+.header_top .contact_thumb:last-child {
+	display: none;
+}
+
+.main_nav li a {
+	padding: 10px 0 14px 0;
+    font-size: 15px;
+ }
+
+/*-- /Header --*/
 
 }
 
 
 @media only screen and (max-width: 900px) {
 
+.row {
+	padding: 0 15px;
+}
 
+.wrapper {
+	padding-top: 80px;
+}
+
+/*-- Header --*/
+
+.header_site {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.header_top {
+	padding-right: 60px;
+}
+
+.logo > div:nth-child(1) {
+    width: 75px;
+}
+
+.logo p {
+    font-size: 14px;
+    line-height: 18px;
+ }
+
+.contacts_thumbs_wrapp {
+	display: none;
+}
+
+.respmenubtn {
+    display: inline-block;
+    position: absolute;
+    top: 21px;
+    right: 6px;
+    z-index: 14;
+}
+
+#resp_nav {
+	/*display: block;*/
+	display: none;
+	width: 100%;
+	height: 100vh;
+	overflow-y: auto;
+	margin: 0;
+	padding: 60px 0 50px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 13;
+	background-color: #fff;
+}
+
+.main_nav {
+	display: block;
+	box-shadow: none;
+	border-radius: 0;
+}
+
+.main_nav li {
+	display: block;
+    padding: 5px;
+}
+
+.main_nav li a {
+	white-space: normal;
+	display: block;
+	padding: 5px 0;
+	text-align: center;
+	font-size: 22px;
+	line-height: 22px;
+}
+
+.main_nav li a:before {
+	display: none;
+}
+
+/*-- /Header --*/
+
+/*-- Section 1 --*/
+
+.promo_descript {
+    padding: 35px 0 81px 0;
+}
+
+/*-- /Section 1 --*/
+
+/*-- Section 2 --*/
+
+.sect_2 {
+    padding: 27px 0 35px 0;
+}
+
+.article .left {
+    width: 330px;
+}
+
+.article .right {
+    width: calc(100% - 330px);
+}
+
+.h2_wrapp {
+    padding: 15px 0;
+}
+
+.red_box {
+    margin: 10px 0;
+}
+
+.article p {
+    padding: 6px 0;
+}
+
+.quote_content {
+    margin: 5px 0;
+}
+
+.quote:before {
+    top: 24px;
+}
+
+/*-- /Section 2 --*/
+
+/*-- Section 1 - About --*/
+
+.about_article .left {
+    width: 540px;
+    padding-right: 0;
+    padding-bottom: 20px;
+}
+
+.about_article .right {
+    width: 100%;
+    padding: 20px 0 0 0;
+}
+
+/*-- /Section 1 - About --*/
+
+/*-- Section 1 - Ask --*/
+
+.ask_templ .left {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.ask_templ .right {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.skype_wrapp {
+    margin: 25px 0;
+}
+
+/*-- /Section 1 - Ask --*/
+
+/*-- Section 1 - Contacts --*/
+
+.contacts_templ .left {
+	display: none;
+}
+
+.contacts_templ .right {
+    width: 100%;
+    padding: 10px 0;
+}
+
+/*-- /Section 1 - Contacts --*/
 
 }
 
 @media only screen and (max-width: 767px) {
 
+h2 {
+    font-size: 26px;
+}
 
+p {
+    font-size: 15px;
+}
+
+p a {
+    font-size: 15px !important;
+}
+
+li {
+    font-size: 15px;
+}
+
+/*-- Section 1 --*/
+
+.promo_sect {
+    background-image: url(img/promo_bg_resp.jpg);
+    position: relative;
+}
+
+.promo_sect:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255, 255, 255, .4);
+}
+
+.promo_sect > .row {
+	position: relative;
+	z-index: 2;
+}
+
+.promo_descript {
+    padding: 35px 0 20px 0;
+}
+
+/*-- /Section 1 --*/
+
+/*-- Section 2 --*/
+
+.shape_wrapp:before {
+	display: none;
+}
+
+.article .left {
+	display: none;
+}
+
+.article .right {
+	width: 100%;
+	padding: 10px 0;
+}
+
+.quote_content p {
+    font-size: 15px;
+}
+
+.quote_footer p {
+    font-size: 15px;
+}
+
+/*-- /Section 2 --*/
+
+/*-- Section 3 --*/
+
+.article_thumb .thumb_descript h3 {
+    font-size: 19px;
+    line-height: 25px;
+}
+
+.article_thumb .thumb_descript p {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+/*-- /Section 3 --*/
+
+/*-- Section 4 --*/
+
+.article_2 {
+    padding: 10px 0;
+}
+
+.article_2_img {
+	display: none;
+}
+
+.article_2 p {
+    padding: 10px 0;
+}
+
+.article_2 .btn_wrapp {
+    padding-right: 0;
+}
+
+.btn_wrapp .transparent_pill {
+    margin: 15px 0;
+}
+
+/*-- /Section 4 --*/
+
+/*-- Section 1 - About --*/
+
+.sect_1_about {
+	padding-bottom: 1px;
+}
+
+.about_article .right p {
+    padding: 10px 0;
+}
+
+/*-- /Section 1 - About --*/
+
+/*-- Section 2 - About --*/
+
+.title_wrapp_2 h2:before {
+    bottom: 7px;
+}
+
+/*-- /Section 2 - About --*/
+
+/*-- Section 1 - Contacts --*/
+
+#map {
+    height: 500px;
+}
+
+/*-- /Section 1 - Contacts --*/
+
+/*-- Section 1 - Partners --*/
+
+.partners {
+    margin: 20px 0;
+}
+
+.partner {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.partner div:nth-child(1) {
+    width: 120px;
+ }
+
+ .partner div:nth-child(2) {
+    padding-top: 10px;
+}
+
+/*-- /Section 1 - Partners --*/
+
+/*-- Section 1 - Practice --*/
+
+.dropdown_item_content ul li {
+    padding-left: 22px;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+/*-- /Section 1 - Practice --*/
+
+/*-- Section 1 - Prices --*/
+
+.info_box_2 {
+    margin: 15px 0;
+    padding: 20px 17px 20px 17px;
+}
+
+.info_box_2 h3 {
+    padding: 5px 0;
+    font-size: 19px;
+    line-height: 23px;
+}
+
+.price_item {
+    padding-bottom: 50px;
+}
+
+.price_item p {
+    padding: 12px 0;
+}
+
+.price_item:last-child {
+    padding-bottom: 20px;
+}
+
+.price_item h3 {
+    padding: 0 0 10px 29px;
+    font-size: 17px;
+ }
+
+.price_item h3:before {
+    border-width: 0 0 16px 16px;
+    top: 2px;
+}
+
+.prices_footer {
+    padding-bottom: 8px;
+}
+
+/*-- /Section 1 - Prices --*/
+
+/*-- Section 1 - Practice --*/
+
+.dropdown_item {
+    padding: 0 15px 0 15px;
+}
+
+/*-- /Section 1 - Practice --*/
+
+/*-- Section 1 - Services --*/
+
+.service {
+	width: calc(50% - 24px);
+}
+
+/*-- /Section 1 - Services --*/
+
+/*-- Footer --*/
+
+.footer .col_1 {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.footer .col_2 {
+    width: 100%;
+    padding: 10px 0;
+}
+
+/*-- /Footer --*/
+
+}
+
+@media only screen and (max-width: 700px) {
+
+/*-- Section 3 --*/
+
+.articles_thumbs {
+    margin: 10px 0;
+}
+
+.article_thumb {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.article_thumb .thumb_descript {
+    min-height: auto;
+}
+
+/*-- /Section 3 --*/
+
+/*-- Section 1 - Publications --*/
+
+.publications {
+    margin: 2px 0 19px 0;
+}
+
+.publication {
+    width: 100%;
+    margin: 12px 0;
+}
+
+/*-- /Section 1 - Publications --*/
 
 }
 
 @media only screen and (max-width: 600px) {
 
+/*-- Section 1 --*/
 
+.promo_descript p {
+    font-size: 22px;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 47px;
+}
+
+/*-- /Section 1 --*/
+
+/*-- Section 2 - About --*/
+
+.sertificate_wrapp {
+    width: 50%;
+}
+
+/*-- /Section 2 - About --*/
 
 }
 
 
 @media only screen and (max-width: 480px) {
 
-	
+	.wrapper {
+		padding-top: 73px;
+	}
+
+	/*-- Header --*/
+
+	.header_top {
+	    padding-right: 40px;
+	    padding: 1px 40px 2px 0;
+	}
+
+	.header_top .left_col {
+	    width: 175px;
+	    padding-right: 5px;
+	}
+
+	.header_top .right_col {
+	    width: calc(100% - 175px);
+	    padding-left: 0;
+	}
+
+	.header_top .right_col .inline_col:nth-child(2) {
+	    padding-left: 0;
+	    display: flex;
+	    display: -webkit-flex;
+	    justify-content: flex-end;
+	    -webkit-justify-content: flex-end;
+	}
+
+	.callback_btn {
+	    height: 55px;
+	    width: 61px;
+	}
+
+	.callback_btn > div:nth-child(2) {
+		display: none;
+	}
+
+	.respmenubtn {
+	    top: 19px;
+	}
+
+	/*-- /Header --*/
+
+	/*-- Section 1 --*/
+
+	.blue_pill {
+		min-width: 259px;
+		height: 81px;
+		padding: 15px 10px 10px 16px;
+		font-size: 15px;
+	}
+
+	/*-- /Section 1 --*/
+
+	/*-- Section 2 --*/
+
+	.red_box {
+	    padding-left: 19px;
+	}
+
+	.quote {
+	    padding: 19px 20px 13px 20px;
+	}
+
+	/*-- /Section 2 --*/
+
+	/*-- Section 2 - About --*/
+
+	.sertificate_wrapp {
+	    width: 50%;
+	    padding: 5px;
+	}
+
+	/*-- /Section 2 - About --*/
+
+	/*-- Section 1 - Ask --*/
+
+	.ask_templ {
+	    margin: 3px 0 15px 0;
+	}
+
+	.white_box {
+	    padding: 29px 15px 11px 15px;
+	}
+
+	.white_box_2 {
+	    padding: 20px 15px 11px 15px;
+	}
+
+	.white_box_2 h3 {
+	    padding: 5px 0;
+	    font-size: 23px;
+	    line-height: 28px;
+	}
+
+	.checkbox {
+	    padding-left: 28px;
+	}
+
+	/*-- /Section 1 - Ask --*/
+
+	/*-- Section 1 - Contacts --*/
+
+	.contacts_templ {
+	    margin-top: 0;
+	}
+
+	.contacts_templ:before {
+		display: none;
+	}
+
+	/*-- /Section 1 - Contacts --*/
+
+	/*-- Section 2 - Contacts --*/
+
+	#map {
+	    height: 400px;
+	}
+
+	/*-- /Section 2 - Contacts --*/
+
+	/*-- Footer --*/
+
+	.contacts_2 > div:last-child {
+		width: 100%;
+	}
+
+	/*-- /Footer --*/
+
+}
+
+@media only screen and (max-width: 440px) {
+
+/*-- Section 1 - Contacts --*/
+
+.contacts_items {
+    margin: 28px 0 0 0;
+}
+
+.person_info {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.person_info_col_1 {
+    padding: 0 0 10px 0;
+}
+
+.person_info_col_2 {
+    width: 100%;
+    padding-left: 0;
+}
+
+/*-- /Section 1 - Contacts --*/
+
+/*-- Section 1 - Services --*/
+
+.services {
+    margin: 35px 0;
+}
+
+.service {
+	width: 100%;
+	margin: 12px 0;
+}
+
+/*-- /Section 1 - Services --*/
+
 }

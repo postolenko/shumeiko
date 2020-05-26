@@ -6,9 +6,13 @@ bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 var parentBlock, dropdownBox, inputVal;
 
-$(window).load(function() {
+$(window).on('load', function() {
 
-
+    if($('.masonry').length > 0) {
+        $('.masonry').masonry({
+          itemSelector: '.grid_item'
+        });
+    }
 
 });
 
@@ -119,7 +123,30 @@ $(document).ready(function() {
         }
     });
 
+    // -------------
 
+    $(".respmenubtn").click(function(e) {
+        e.preventDefault();
+        if( $("#resp_nav").is(":hidden") ) {
+            $("#resp_nav").fadeIn(300);
+            $(this).addClass("active");
+        } else {
+            $("#resp_nav").fadeOut(300);
+            $(this).removeClass("active");
+        }
+    });
+    $("#resp_nav .close_btn").on("click", function(e) {
+        e.preventDefault();
+        $("#resp_nav").fadeOut(300);
+        $(".respmenubtn").removeClass("active");
+    });
+    $(this).keydown(function(eventObject){
+        if (eventObject.which == 27 &&
+            $("#resp_nav").is(":visible") ) {
+                $("#resp_nav").fadeOut(300);
+                $(".respmenubtn").removeClass("active");
+        }
+    });
 
 });
 

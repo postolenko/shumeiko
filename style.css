@@ -100,7 +100,7 @@ header {
     flex: 0 0 auto;
     -webkit-flex: 0 0 auto;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .content {
@@ -424,62 +424,6 @@ textarea:focus {
 
 /*-- /Slick --*/
 
-/*-- Breadcrumbs --*/
-
-/*.breadcrumbs_wrapp {
-    padding: 40px 0 20px 0;
-}
-
-.breadcrumbs li {
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 5px;
-}
-
-.breadcrumbs li:after {
-    position: relative;
-    top: -2px;
-    left: 5px;
-    content: "\2192";
-    font-size: 13px;
-    line-height: 23px;
-    color: #333333;
-}
-
-.breadcrumbs li:last-child:after {
-    display: none;
-}
-
-.breadcrumbs li a {
-    border-bottom: 1px solid transparent;
-    font-size: 18px;
-    line-height: 23px;
-    color: #333333;
-}
-
-.breadcrumbs li a:link,
-.breadcrumbs li a:visited {
-    border-bottom: 1px solid transparent;
-}
-
-.breadcrumbs li a:active,
-.breadcrumbs li a.active {
-    border-bottom: 1px solid #333333;
-}
-
-.breadcrumbs li a:hover {
-    border-bottom: 1px solid #333333;
-}
-
-.breadcrumbs li:last-child a {
-    pointer-events: none;
-    cursor: default;
-    opacity: .6;
-    border-bottom: 1px solid transparent;
-}*/
-
-/*-- /Breadcrumbs --*/
-
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
@@ -509,6 +453,7 @@ textarea:focus {
     display: -webkit-flex;
     width: calc(100% - 205px);
     padding-left: 10px;
+    position: relative;
 }
 
 .logo {
@@ -686,7 +631,6 @@ textarea:focus {
 
 .tel_thumb p {
     font-size: 18px !important;
-    /*line-height: 24px;*/
     font-weight: bold;
     color: #161616;
 }
@@ -766,7 +710,7 @@ textarea:focus {
 }
 
 .main_nav li {
-
+    padding: 0 3px;
 }
 
 .main_nav li a {
@@ -859,7 +803,6 @@ textarea:focus {
     opacity: 1;
 }
 
-
 /* ----- Responsive Menu Button ------ */
 
 .respmenubtn {
@@ -913,7 +856,7 @@ textarea:focus {
 }
 
 .respmenubtn:hover span {
-    background: #e9ba5f;
+    background: #bb2828;
 }
 
 .respmenubtn.active span {
@@ -921,7 +864,7 @@ textarea:focus {
     width: 35px;
     top: 2px;
     left: 0;
-    background: #e9ba5f;
+    background: #bb2828;
 }
 
 .respmenubtn.active span:last-child {
@@ -1220,7 +1163,7 @@ textarea:focus {
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-    margin: 40px 0 48px 0;
+    margin: 40px -10px 48px -10px;
 }
 
 .article_thumb {
@@ -1549,6 +1492,8 @@ textarea:focus {
     min-height: 60px;
     cursor: pointer;
     padding: 17px 35px 14px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .dropdown_item_title h3 {
@@ -2157,7 +2102,7 @@ textarea:focus {
 
 .sertificate_wrapp {
     width: 33.33%;
-    padding: 12px 12px;
+    padding: 12px;
     text-align: center;
 }
 
@@ -2265,6 +2210,7 @@ textarea:focus {
 .partners_sect {
     min-height: 540px;
     position: relative;
+    overflow: hidden;
 }
 
 .partners_sect:before {
@@ -2293,13 +2239,11 @@ textarea:focus {
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-    /*margin: 0 -20px;*/
     margin: 49px -20px;
 }
 
 .partner {
     display: inline-table;
-    /*display: inline-table;*/
     width: calc( 33.33% - 40px);
     margin: 20px 20px;
     line-height: 0;
@@ -2318,7 +2262,10 @@ textarea:focus {
 }
 
 .partner div:nth-child(1) img {
-
+    display: block;
+    width: auto;
+    height: auto;
+    /*max-width: 100%;*/
 }
 
 .partner div:nth-child(2) p {
@@ -2447,8 +2394,13 @@ textarea:focus {
 }
 
 .publication {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
     width: calc(33.33% - 24px);
     margin: 12px;
+    min-height: 470px;
     -webkit-box-shadow: 0 2px 15px 0px rgba(29, 42, 62, 0.1);
     -moz-box-shadow: 0 2px 15px 0px rgba(29, 42, 62, 0.1);
     box-shadow: 0 2px 15px 0px rgba(29, 42, 62, 0.1);
@@ -2513,7 +2465,8 @@ textarea:focus {
 }
 
 .publication .description {
-    min-height: 200px;
+    /*min-height: 200px;*/
+    height: calc(100% - 270px);
     background-color: #fff;
     padding: 0 11px 2px 11px;
     border-left: 1px solid #e8e8e8;
@@ -3007,7 +2960,7 @@ footer {
 
 .footer .col_2 {
     width: calc(100% - 215px);
-    padding: 10px 0 10px 5px;
+    padding: 0 0 10px 5px;
 }
 
 .footer .logo {
@@ -3033,7 +2986,7 @@ footer {
 }
 
 .contacts_2 > div {
-    /*margin: 5px 0;*/
+    padding: 10px;
 }
 
 .contacts_2 .contact_thumb {
@@ -3061,8 +3014,8 @@ footer {
 }
 
 .messengers {
-    display: flex;
-    display: -webkit-flex;
+    display: inline-flex;
+    display: -webkit-inline-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     justify-content: space-between;
@@ -3079,13 +3032,9 @@ footer {
     display: block;
 }
 
-.messengers li a img {
-
-}
-
 .socials {
-    display: flex;
-    display: -webkit-flex;
+    display: inline-flex;
+    display: -webkit-inline-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     align-items: center;
